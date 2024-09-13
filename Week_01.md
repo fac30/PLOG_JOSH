@@ -8,14 +8,19 @@ Do not fill in the feedback section. The Founders and Coders team will update th
 
 ## Assessment
  ### 1. Show evidence of some of the learning outcomes you have achieved this week.
-> **[Learning outcomes...]**  
-> [your evidence here]
+#### HTML Forms
+
+* Utilised forms to allow user inputs
+* Learnt how user input data can be processed
+* Learnt how I can implement forms to ensure they are fully accessible
+
 
  ### 2. Show an example of some of the learning outcomes you have struggled with and/or would like to re-visit.
-> [**Learning outcome...**]  
-> [your evidence here]
+#### GitHub
+
+* Although I struggled initially I believe I am now confident using branches and repos
 
 ## Feedback (For CF's)
-> [**Course Facilitator name**]  
-> [*What went well*]  
-> [*Even better if*]
+#### Alex
+
+*Alex was really helpful and most importantly, patient.
