@@ -36,6 +36,11 @@ Do not fill in the feedback section. The Founders and Coders team will update th
 ## Feedback (For CF's)
 #### Alex
 
-* Alex was really helpful and most importantly, patient.
-* everyone was really welcoming and helped with any issues I had.
+[What went well]
+
+Looks like you really took responsibility for forms in your team and did your own research to improve your skills.
+
+[Even better if]
+
+You could enumerate some other topics, even if they were assigned to someone else in your team. You can give a very brief description (one or two lines) about topics like the dynamic generation of cards, complex event listeners (in case you have those in your project). Your addition of the code snippet is great, keep adding more for each topic that would benefit from having an example.
 
