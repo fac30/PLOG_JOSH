@@ -125,6 +125,6 @@ async function sendResponse(message, content, userId, isDM) {
 Being a scrum master. Working with dotEnv and our config file caused me issues and I ended up spending a lot of time trying to solve them than I would have liked.
 
 ## Feedback (For CF's)
-> [**Course Facilitator name**]  
-> [*What went well*]  
-> [*Even better if*]
+> [**Course Facilitator name**]  Alexander
+> [*What went well*]  I loved that you documented all the important topics we learned on this week: testing, making API calls...  The code snippets are perfect examples of what you explain.
+> [*Even better if*] You could go a bit more granular on your struggles. Ideally this content could be indexed and someone else could benefit from your experience
