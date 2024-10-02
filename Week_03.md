@@ -85,6 +85,15 @@ Something that has helped me visualise how everything works in this project was 
 
 
 ## Feedback (For CF's)
-> [**Course Facilitator name**]  
-> [*What went well*]  
+> [**Course Facilitator name**]
+
+Alexander
+
+> [*What went well*]
+
+Very good code snippets, you covered the most important learnings for this week.
+
 > [*Even better if*]
+
+I wont change much. I would touch a few more topics to make it more complete, but it is fine as it is.
+You can have a peak to Jason's, it is a great example of a very complete PLog.
