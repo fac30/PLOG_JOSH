@@ -116,4 +116,12 @@ I wasn't a huge fan of tailwind to begin with. I prefer to look at a css stylesh
 
 ## 4. Feedback
 
+Alexander
 
+### What went well
+
+It is great that you found out how BE-FE interact.
+
+### Things to improve
+
+For this week I would also like to see some React specific content
