@@ -98,5 +98,3 @@ AWS's interface seemed straightforward enough to me, but a lot of what Jack was 
 
 ## 4. Feedback
 ```
-
-Let me know if you'd like to make any further changes!
