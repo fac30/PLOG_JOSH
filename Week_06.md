@@ -104,4 +104,6 @@ At the moment, this is only designed with fetching vinyl data in mind, but I'd l
 
 ## 4. Feedback
 
+Alexander
 
+Since you took the DevOps role this week it would be good to see some technical info there. Where is being deployed? was it manually or using a CI/CD pipeline, if there is any automatic process show the code, etc
