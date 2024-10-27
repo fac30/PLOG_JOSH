@@ -78,15 +78,91 @@ After running this, I found the issue was that the process.env.DB_FILE was undef
 
 </details>
 
-<details><summary><strong></strong></summary>
+<details><summary><strong>DevOps(maybe)</strong></summary>
 
 ---
+Last week I mentioned I took a Devops role but I think I am refering to something different. What I meant was It was my role to get the backend set up and all dependancies and packages installed and planned how the backend would be communicating with the front end. 
 
+This week I expanded on my function that handles quesries so that it could POST as well as GET data 
+
+```ts
+const fetchData = async (
+  table: string,
+  method: string,
+  body?: any, 
+): Promise<any> => {
+  try {
+    const response = await fetch(`http://localhost:3000/${table}`, {
+      method: method,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: method === "POST" ? JSON.stringify(body) : null, 
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    throw error;
+  }
+};
+
+export { fetchData };
+```
+
+And this can be called like this
+
+```ts
+ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    await fetchData("register", "POST", await createUserObject());
+  };
+```
+This function will need to be renamed for readability
 </details>
 
-<details><summary><strong></strong></summary>
+<details><summary><strong>Authentication</strong></summary>
 
 ---
+We decided to handle password hashing on ourr front end. I found it easiest to do this by breaking the task down into steps to make it easier for me to understand. I did this by storing the users details into a object including the hashed password, which was generated using the hashPassword function
+
+```ts
+  const createUserObject = async (): Promise<UserObject> => {
+    const { confirm_password, password, ...userObject } = formData;
+    userObject.password_hash = await hashPassword(password);
+    return userObject as UserObject;
+  };
+```
+
+This object then gets sent to our backend using the function stated in the previous section
+
+```ts
+await fetchData("register", "POST", await createUserObject());
+      setIsSuccess(true);
+      setFormData(INITIAL_FORM_STATE);
+    } catch (error) {
+      console.error("Registration failed:", error);
+    }
+```
+
+I'm sure this task could be handled in fewer steps, but when we decided to hash the password before storing it, this method felt easiest forr me to write. Below is how the password is being hashed and salted
+
+```ts
+import bcrypt from "bcryptjs";
+
+const hashPassword = async (password: string): Promise<string> => {
+  const saltRounds = 12;
+  const hash = await bcrypt.hash(password, saltRounds);
+  return hash;
+};
+
+export default hashPassword;
+```
 
 </details>
 
@@ -97,31 +173,16 @@ After running this, I found the issue was that the process.env.DB_FILE was undef
 <details><summary>Toggle List</summary>
 
 ---
+I previously felt like I was getting more confident using Typescript, but in this project so farr it has been a bit of a struggle for me. Using it with React feels like a bit of a pain, and often quite confusing. I'm feeling like im using ChatGpt more than I would like to to figure out why my code isn't working, and it quite often comes down to type issues.
 
 </details>
 
-## 3. Full Progress List
 
-<details><summary>Toggle Key</summary>
-
----
-
-</details>
-
-<details><summary>Toggle List</summary>
-
----
-
-### TypeScript & Express
-
----
-
-### RESTFUL APIs
-
----
 
 ### Additional
 
 ---
+
+Overall I am happy with my progress this week. I've found working on personal projects over the weekend has really helped me grasped some concepts and I'm feeling more confident to start working on freelance work now.
 
 </details>
