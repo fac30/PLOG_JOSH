@@ -42,5 +42,5 @@ Looks like you really took responsibility for forms in your team and did your ow
 
 [Even better if]
 
-You could enumerate some other topics, even if they were assigned to someone else in your team. You can give a very brief description (one or two lines) about topics like the dynamic generation of cards, complex event listeners (in case you have those in your project). Your addition of the code snippet is great, keep adding more for each topic that would benefit from having an example.
+You could enumerate some other topics, even if they were assigned to someone else in your team. You can give a very brief description (one or two lines) about topics like the dynamic generation of cards, complex event listeners (in case you have those in your project). Your addition of the code snippet is great, keep adding more for each topic that would benefit from having an example
 
