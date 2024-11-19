@@ -72,4 +72,11 @@ However this was returning autherisation errors that we were unable to solve in 
 
 ## 4. Feedback
 
+[Facilitator]
+Alexander
 
+[What went well]
+Good implementation of product filtering with clear filter logic. Nice use of Tailwind's responsive design features for mobile optimization.
+
+[Even better if]
+Show specific auth errors you encountered with the logout function rather than just mentioning them. Since you studied deployment tutorials, document what you learned about deployment beyond the workshop material.
