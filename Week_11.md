@@ -7,13 +7,31 @@ Make sure to record evidence of your processes. You can use code snippets, scree
 Do not fill in the feedback section. The Founders and Coders team will update this with feedback on your progress.
 
 ## Assessment
- ### 1. Show evidence of some of the learning outcomes you have achieved this week.
-> **[Learning outcomes...]**  
-> [your evidence here]
+I struggled quite a bit this week. I found it hard to get any momentum as I had a lot going on outside of FAC which meant I had to take a day off and struggled with getting my head around .NET. My team are very proactive and I felt the project moving along way quicker than I had a chance to properly settle in and write some meaningful code. 
 
- ### 2. Show an example of some of the learning outcomes you have struggled with and/or would like to re-visit.
-> [**Learning outcome...**]  
-> [your evidence here]
+I was hoping to write some tests using Xunit, but the version of some of the packages it required me to have were breaking other parts of the project. It also didn't help that I couldn't get postgres installed on my system. I felt I wasted most of Monday messing about with that before giving up and refarctoring the code I wrote the previous week for our dbcontext file.
+
+The idea was to use snakeNamingConventions to clean up this code.
+
+```csharp
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<Comment>().ToTable("comment");
+        modelBuilder.Entity<Collection>().ToTable("collection");
+        modelBuilder.Entity<ColourCollection>().ToTable("colour_collection");
+        modelBuilder.Entity<Colour>().ToTable("colour");
+        modelBuilder.Entity<User>().ToTable("user");
+
+        modelBuilder.Entity<ColourCollection>().HasKey(cc => new { cc.CollectionId, cc.ColourId });
+    }
+```
+
+However because our database tables were named with singular titles, when I made the changes and pushed to our repo, it broke our site, so we reverted back.
+
+I also used Tuesday to implement a functional search bar on our site using React context. I really enjoyed this but it got made redundant as the project bacame more complex. 
+
+Overall I'm not overly happy with the input I had and will maybe spend some time in the future building something with .NET and C# for some more practice 
 
 ## Feedback (For CF's)
 > [**Course Facilitator name**]  
