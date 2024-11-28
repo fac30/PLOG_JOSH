@@ -34,6 +34,10 @@ I also used Tuesday to implement a functional search bar on our site using React
 Overall I'm not overly happy with the input I had and will maybe spend some time in the future building something with .NET and C# for some more practice 
 
 ## Feedback (For CF's)
-> [**Course Facilitator name**]  
+> [**Course Facilitator name**]
+
+Alexander
+
 > [*What went well*]  
-> [*Even better if*]
+
+I think that you did great with the time that you had. It is not so much about the specific learnings, but to get the basics and broad ideas. You may not be able to build a model by heart (is that even important), but you understand the technology and, if you need to work in a .NET project, where to look for resources/examples.
